@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(161, 225, 250); /* clean light background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #a3c9f9, #c9e7ff); /* soft gradient */
+  color: #1536a1;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.form-section {
+  background: #fff7e6; /* light peach */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 45%;
+  transition: transform 0.2s ease;
+}
+
+.schedule-section {
+  background: #e6fff7; /* light mint */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  width: 45%;
+  transition: transform 0.2s ease;
+}
+
+.form-section:hover, .schedule-section:hover {
+  transform: translateY(-4px);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+input, button {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #a3c9f9;
+  outline: none;
+  box-shadow: 0 0 6px rgba(163, 201, 249, 0.6);
+}
+
+button {
+  background: #a3c9f9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #7fb3f0;
+}
+
+.alert {
+  color: #e74c3c;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#scheduleList li {
+  background: #f0f8ff; /* pastel blue */
+  margin: 0.5rem 0;   /* ✅ fixed */
+  padding: 0.8rem;
+  border-radius: 6px;
+}

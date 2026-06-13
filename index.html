@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Classroom Schedule Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Virtual Classroom Schedule Planner</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Add a Class</h2>
+      <form id="classForm">
+        <label for="className">Class Name:</label>
+        <input type="text" id="className" required>
+
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime" required>
+
+        <label for="endTime">End Time:</label>
+        <input type="time" id="endTime" required>
+
+        <button type="submit">Add Class</button>
+      </form>
+      <p id="alertMessage" class="alert"></p>
+    </section>
+
+    <section class="schedule-section">
+      <h2>Scheduled Classes</h2>
+      <ul id="scheduleList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
